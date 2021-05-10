@@ -1,0 +1,25 @@
+[Defines]
+  INF_VERSION                = 0x00010005
+  BASE_NAME                  = MotorolaBootMgrApp
+  FILE_GUID                  = 7eaff726-34cc-4204-b09d-f95471b873cf
+  MODULE_TYPE                = UEFI_APPLICATION
+  ENTRY_POINT                = UefiMotorolaBootManagerMain
+  UEFI_SPECIFICATION_VERSION = 0x0002001E
+
+[Sources]
+  MotorolaBootMgrApp.c
+
+[Packages]
+  ArmPkg/ArmPkg.dec
+  MdePkg/MdePkg.dec
+  TroikaSproutPkg/TroikaSproutPkg.dec
+
+[LibraryClasses]
+  BaseLib
+  BaseMemoryLibStm
+  DxeHobLib
+  UefiRuntimeLib
+  UefiMemoryAllocationLib
+  UefiDevicePathLib
+  UefiApplicationEntryPoint
+  DebugLib
