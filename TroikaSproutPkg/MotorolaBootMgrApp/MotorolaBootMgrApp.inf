@@ -23,3 +23,13 @@
   UefiDevicePathLib
   UefiApplicationEntryPoint
   DebugLib
+
+[protocol]
+  gEfiDevicePathProtocolGuid
+  gEfiPciRootBridgeIoProtocolGuid
+  gEfiBlockIoProtocolGuid
+  gEfiExampleConfigurationVariableGuid
+  gEfiPciIoProtocolGuid
+
+
+[Guids]
